@@ -18,7 +18,7 @@ function PlayerTitles() {
                     })
                 });
                 let listItems = objetosFiltrados.map((item) => 
-                <li key={item.uuid}>titulo: {item.titulo}</li>
+                <li key={item.uuid}>{item.titulo}</li>
                 );
                 setLista(listItems);
                 setCargando(false);
