@@ -11,7 +11,8 @@ import {
   MenuSidebar,
   Home,
   PlayerTitles,
-  Rangos
+  Rangos,
+  Sprays
 } from './Components';
 import {
   AppWrapper
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: "/rangos",
     element: <Rangos />
+  },
+  {
+    path: "/sprays",
+    element: <Sprays />
   }
 ]);
 

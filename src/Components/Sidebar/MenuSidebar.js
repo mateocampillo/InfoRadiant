@@ -9,8 +9,8 @@ function MenuSidebar(){
         <MenuSidebarWrapper id='MenuSidebarWrapper' className='menuSidebarClose'>
             <MenuSidebarContainer>
                 <a href='/rangos'>Rangos</a>
+                <a href='/sprays'>Sprays</a>
                 <a href='/player-titles'>Titulos de jugador</a>
-                <a href='/'>Enlace</a>
             </MenuSidebarContainer>
         </MenuSidebarWrapper>
     )

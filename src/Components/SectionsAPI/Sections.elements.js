@@ -52,3 +52,9 @@ export const UlGrid = styled.ul`
         border: 1px solid ${colors.mediumgray};
     }
 `;
+
+//SPRAYS
+
+export const ImgSprays = styled.img`
+    width: 70%;
+`;
