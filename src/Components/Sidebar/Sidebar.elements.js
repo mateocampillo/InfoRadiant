@@ -37,6 +37,7 @@ export const SidebarButton = styled.button`
 export const MenuSidebarWrapper = styled.div`
     font-family: 'Inter', sans-serif;
     position: fixed;
+    z-index: 1000;
     width: 70vw;
     background-color: ${colors.blue};
 `;

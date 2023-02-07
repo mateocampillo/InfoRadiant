@@ -4,3 +4,5 @@ export const green = "#042e27";
 export const brown = "#b78460";
 export const pink = "#b38c8f";
 export const blue = "#364966";
+export const lightgray = '#F1F6F5';
+export const mediumgray = '#dadada';

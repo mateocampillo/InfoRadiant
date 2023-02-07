@@ -11,6 +11,7 @@ import {
   MenuSidebar,
   Home,
   PlayerTitles,
+  Rangos
 } from './Components';
 import {
   AppWrapper
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
     path: "/player-titles",
     element: <PlayerTitles />
   },
+  {
+    path: "/rangos",
+    element: <Rangos />
+  }
 ]);
 
 function App() {

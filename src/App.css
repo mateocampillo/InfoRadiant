@@ -3,11 +3,12 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+/* Animacion de menu Sidebar */
 .stop-scroll{
     height: 100%;
     overflow: hidden;
 }
-
 .menuSidebarClose{
     left: -70%;
 }
@@ -18,8 +19,22 @@
     from{left: 0%;}to{left: -70%;}
 }
 .menuSidebarAnimClose{
-    animation: menuClose 250ms ease forwards;
+    animation: menuClose 150ms ease-in forwards;
 }
 .menuSidebarAnimOpen{
-    animation: menuOpen 250ms ease forwards;
+    animation: menuOpen 200ms ease forwards;
+}
+
+/* Animacion de cargando */
+.rotate {
+    animation: rotation 2s infinite linear;
+}
+  
+@keyframes rotation {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(359deg);
+}
 }

@@ -8,27 +8,32 @@ import {
 } from './Sections.elements';
 import Cargando from './Cargando';
 
-function PlayerTitles() {
+function Rangos() {
 
     const [cargando, setCargando] = useState(true);
     const [lista, setLista] = useState(null);
 
     useEffect(() => {
-        fetch("https://valorant-api.com/v1/playertitles?language=es-MX")
+        fetch("https://valorant-api.com/v1/competitivetiers/?language=es-MX")
             .then((res) => res.json())
             .then((data) => {
                 let objetosFiltrados = [];
-                let datosUtiles = data.data;
+                let datosUtiles = data.data[4].tiers;
                 datosUtiles.forEach(item => {
-                    if(item.displayName !== ' '){
+                    if(item.tier < 1 || item.tier > 2){
                         objetosFiltrados.push({
-                            uuid: item.uuid,
-                            titulo: item.titleText
+                            tier: item.tier,
+                            titulo: item.tierName,
+                            smallIcon: item.smallIcon,
+                            largeIcon: item.largeIcon
                         })
                     }
                 });
                 let listItems = objetosFiltrados.map((item) => 
-                <li key={item.uuid}>{item.titulo}</li>
+                <li key={item.tier}>
+                    <img alt='Imagen de rango' src={item.smallIcon}/><br/>
+                    {item.titulo}
+                </li>
                 );
                 setLista(listItems);
                 setCargando(false);
@@ -47,8 +52,8 @@ function PlayerTitles() {
     return (
         <MainWrapper>
             <MainContainer>
-                <TituloH2>Titulos de jugador</TituloH2>
-                <DescP>Estos son todos los titulos de jugador actuales en VALORANT</DescP>
+                <TituloH2>Rangos de VALORANT</TituloH2>
+                <DescP>Estos son, de menor a mayor categoria, todos los rangos actuales en VALORANT</DescP>
                 <UlGrid>
                     {lista}
                 </UlGrid>
@@ -57,4 +62,4 @@ function PlayerTitles() {
     )
 }
 
-export default PlayerTitles;
+export default Rangos;
