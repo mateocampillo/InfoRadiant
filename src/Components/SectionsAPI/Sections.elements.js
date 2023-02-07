@@ -58,3 +58,9 @@ export const UlGrid = styled.ul`
 export const ImgSprays = styled.img`
     width: 70%;
 `;
+
+//ARMAS
+
+export const ImgArmas = styled.img`
+    width: 80%;
+`;
