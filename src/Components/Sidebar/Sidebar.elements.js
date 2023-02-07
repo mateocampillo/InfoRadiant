@@ -33,3 +33,27 @@ export const SidebarButton = styled.button`
         margin: 0px auto;
     }
 `;
+
+export const MenuSidebarWrapper = styled.div`
+    font-family: 'Inter', sans-serif;
+    position: fixed;
+    width: 70vw;
+    background-color: ${colors.blue};
+`;
+
+export const MenuSidebarContainer = styled.div`
+    position: relative;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    a{
+        width: 100%;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.2rem;
+        padding: 7px 0px;
+        border-top: 1px solid #fff;
+    }
+`;

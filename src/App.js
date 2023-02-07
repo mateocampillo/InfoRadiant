@@ -8,6 +8,7 @@ import {
 
 import {
   Sidebar,
+  MenuSidebar,
   Home,
   PlayerTitles,
 } from './Components';
@@ -31,6 +32,7 @@ function App() {
     <div className="App">
       <AppWrapper>
         <Sidebar />
+        <MenuSidebar />
         <RouterProvider router={router} />
       </AppWrapper>
     </div>

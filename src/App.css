@@ -3,3 +3,23 @@
     padding: 0px;
     box-sizing: border-box;
 }
+.stop-scroll{
+    height: 100%;
+    overflow: hidden;
+}
+
+.menuSidebarClose{
+    left: -70%;
+}
+@keyframes menuOpen{
+    from{left: -70%;}to{left: 0%;}
+}
+@keyframes menuClose{
+    from{left: 0%;}to{left: -70%;}
+}
+.menuSidebarAnimClose{
+    animation: menuClose 250ms ease forwards;
+}
+.menuSidebarAnimOpen{
+    animation: menuOpen 250ms ease forwards;
+}
