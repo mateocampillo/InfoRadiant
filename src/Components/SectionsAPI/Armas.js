@@ -58,7 +58,7 @@ function Armas() {
                 });
                 let listItems = objetosFiltrados.map((item) => 
                 <li key={item.tier}>
-                    <a href={`/armas/${item.titulo}`}><ImgArmas alt='Skin default' src={item.defaultSkinUuid}/></a><br/>
+                    <a href={`/detalle/?weapon=${item.uuid}`}><ImgArmas alt='Skin default' src={item.defaultSkinUuid}/></a><br/>
                     {item.titulo}
                 </li>
                 );

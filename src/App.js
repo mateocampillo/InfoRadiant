@@ -13,7 +13,8 @@ import {
   PlayerTitles,
   Rangos,
   Sprays,
-  Armas
+  Armas,
+  DetalleArma
 } from './Components';
 import {
   AppWrapper
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
   {
     path: "/armas",
     element: <Armas />
+  },
+  {
+    path: "/detalle",
+    element: <DetalleArma />
   }
 ]);
 
