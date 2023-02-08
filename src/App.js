@@ -15,7 +15,8 @@ import {
   Sprays,
   Armas,
   DetalleArma,
-  Collections
+  Bundles,
+  Buddies
 } from './Components';
 import {
   AppWrapper
@@ -47,8 +48,12 @@ const router = createBrowserRouter([
     element: <DetalleArma />
   },
   {
-    path:"/collections",
-    element: <Collections />
+    path:"/bundles",
+    element: <Bundles />
+  },
+  {
+    path:"/buddies",
+    element: <Buddies />
   }
 ]);
 

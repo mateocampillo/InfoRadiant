@@ -10,8 +10,9 @@ function MenuSidebar(){
             <MenuSidebarContainer>
                 <a href='/rangos'>Rangos</a>
                 <a href='/armas'>Armas</a>
-                <a href='/collections'>Colecciones</a>
+                <a href='/bundles'>Bundles</a>
                 <a href='/sprays'>Sprays</a>
+                <a href='/buddies'>Buddies</a>
                 <a href='/player-titles'>Titulos de jugador</a>
             </MenuSidebarContainer>
         </MenuSidebarWrapper>

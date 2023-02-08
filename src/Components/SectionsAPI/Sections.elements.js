@@ -70,3 +70,41 @@ export const ImgArmas = styled.img`
 export const ImgSkins = styled.img`
     width: 80%;
 `;
+
+//BUNDLES
+
+export const UlGridSingle = styled.ul`
+    display: grid;
+    grid-template-columns: 100%;
+    list-style-type: none;
+    padding: 10px 10px;
+    li{
+        padding: 10px 10px;
+        text-align: center;
+        font-weight: 500;
+        border: 1px solid ${colors.mediumgray};
+    }
+`;
+
+export const ImgBundles = styled.img`
+    width: 100%;
+`;
+
+//BUDDIES
+
+export const UlGridTriple = styled.ul`
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    list-style-type: none;
+    padding: 10px 10px;
+    li{
+        padding: 10px 10px;
+        text-align: center;
+        font-weight: 500;
+        border: 1px solid ${colors.mediumgray};
+    }
+`;
+
+export const ImgBuddies = styled.img`
+    width: 100%;
+`;
