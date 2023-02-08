@@ -5,6 +5,7 @@ import {
     TituloH2,
     DescP,
     UlGrid,
+    ImgSkins
 } from './Sections.elements';
 import Cargando from './Cargando';
 
@@ -13,14 +14,35 @@ function DetalleArma() {
     const queryParams = new URLSearchParams(window.location.search);
     const query = queryParams.get('weapon');
     const [cargando, setCargando] = useState(true);
-    const [detalle, setDetalle] = useState([]);
+    const [lista, setlista] = useState([]);
+    const [nombreArma, setNombreArma] = useState('');
     const apiCall = 'https://valorant-api.com/v1/weapons/';
+    const languageApi = '?language=es-MX'
 
     useEffect(() => {
-        fetch(apiCall+query)
+        fetch(apiCall+query+languageApi)
             .then((res) => res.json())
             .then((data) => {
-
+                setNombreArma(data.data.displayName);
+                let collectionsSkins = [];
+                data.data.skins.forEach((collection) => {
+                    if(collection.chromas[0].displayName !== 'Standard'){
+                        collectionsSkins.push({
+                            uuid: collection.uuid,
+                            titulo: collection.chromas[0].displayName,
+                            icon: collection.chromas[0].fullRender
+                        })
+                    }
+                });
+                let listaSkin = collectionsSkins.map((objeto) => {
+                    return (
+                        <li key={objeto.uuid}>
+                            <ImgSkins alt='Skin default' src={objeto.icon}/><br/>
+                            {objeto.titulo}
+                        </li>
+                    )
+                });
+                setlista(listaSkin);
                 setCargando(false);
             })
             .catch((err) => {
@@ -38,9 +60,10 @@ function DetalleArma() {
         <MainWrapper>
             <MainContainer>
                 <TituloH2>Skins de VALORANT</TituloH2>
-                <DescP>Esta es toda la info de ARMA en VALORANT</DescP>
+                <DescP>Esta es toda la info actual de {nombreArma} en VALORANT</DescP>
+                <DescP>Hay {lista.length} skins de {nombreArma} en el juego</DescP>
                 <UlGrid>
-                    {detalle}
+                    {lista}
                 </UlGrid>
             </MainContainer>
         </MainWrapper>

@@ -64,3 +64,9 @@ export const ImgSprays = styled.img`
 export const ImgArmas = styled.img`
     width: 80%;
 `;
+
+//SKINS
+
+export const ImgSkins = styled.img`
+    width: 90%;
+`;
