@@ -16,7 +16,10 @@ import {
   Armas,
   DetalleArma,
   Bundles,
-  Buddies
+  Buddies,
+  Mapas,
+  CartasDeJugador,
+  About
 } from './Components';
 import {
   AppWrapper
@@ -54,6 +57,18 @@ const router = createBrowserRouter([
   {
     path:"/buddies",
     element: <Buddies />
+  },
+  {
+    path:"/mapas",
+    element: <Mapas />
+  },
+  {
+    path:"/cartas",
+    element: <CartasDeJugador />
+  },
+  {
+    path:"/about",
+    element: <About />
   }
 ]);
 

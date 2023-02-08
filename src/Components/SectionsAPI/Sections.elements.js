@@ -36,6 +36,18 @@ export const DescP = styled.p`
     margin-left: 8px;
     padding: 15px 0px;
     font-size: 1.1rem;
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+`;
+
+export const HrCustom = styled.hr`
+    background-color: #000;
+	border-top: 2px dashed #fff;
+    border-bottom: none;
+    width: 80%;
+    margin: 10px auto;
 `;
 
 //RANGOS
@@ -107,4 +119,62 @@ export const UlGridTriple = styled.ul`
 
 export const ImgBuddies = styled.img`
     width: 100%;
+`;
+
+//MAPAS
+
+export const ImgMapas = styled.img`
+    width: 100%;
+`;
+
+export const DivWrapperMapas = styled.div`
+    width: 100%;
+`;
+
+export const DivContainerMapas = styled.div`
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    h2{
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+`;
+
+//CARTAS
+
+export const ImgCarta = styled.img`
+    width: 90%;
+`;
+
+//ABOUT 
+
+export const AboutContainer = styled.div`
+    height: 93vh;
+`;
+
+export const AboutInfo = styled.div`
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    div{
+        margin: 0px auto;
+        ul{
+            list-style-type: none;
+            li{
+                margin: 10px auto;
+            }
+        }
+    }
+`;
+
+export const H4Info = styled.h4`
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 100px;
 `;

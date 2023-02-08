@@ -8,3 +8,6 @@ export {default as Armas} from './SectionsAPI/Armas';
 export {default as DetalleArma} from './SectionsAPI/DetalleArma';
 export {default as Bundles} from './SectionsAPI/Bundles';
 export {default as Buddies} from './SectionsAPI/Buddies';
+export {default as Mapas} from './SectionsAPI/Mapas';
+export {default as CartasDeJugador} from './SectionsAPI/CartasDeJugador';
+export {default as About} from './SectionsAPI/About';
