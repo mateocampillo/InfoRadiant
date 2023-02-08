@@ -6,3 +6,4 @@ export {default as PlayerTitles} from './SectionsAPI/PlayerTitles';
 export {default as Sprays} from './SectionsAPI/Sprays';
 export {default as Armas} from './SectionsAPI/Armas';
 export {default as DetalleArma} from './SectionsAPI/DetalleArma';
+export {default as Collections} from './SectionsAPI/Collections';

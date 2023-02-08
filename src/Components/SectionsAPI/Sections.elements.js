@@ -68,5 +68,5 @@ export const ImgArmas = styled.img`
 //SKINS
 
 export const ImgSkins = styled.img`
-    width: 90%;
+    width: 80%;
 `;

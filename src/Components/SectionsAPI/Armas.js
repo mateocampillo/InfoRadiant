@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 import {
     MainContainer,
     MainWrapper,
@@ -58,7 +59,7 @@ function Armas() {
                 });
                 let listItems = objetosFiltrados.map((item) => 
                 <li key={item.tier}>
-                    <a href={`/detalle/?weapon=${item.uuid}`}><ImgArmas alt='Skin default' src={item.defaultSkinUuid}/></a><br/>
+                    <Link to={`/detalle/?weapon=${item.uuid}`}><ImgArmas alt='Skin default' src={item.defaultSkinUuid}/></Link><br/>
                     {item.titulo}
                 </li>
                 );

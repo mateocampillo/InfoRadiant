@@ -14,7 +14,8 @@ import {
   Rangos,
   Sprays,
   Armas,
-  DetalleArma
+  DetalleArma,
+  Collections
 } from './Components';
 import {
   AppWrapper
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
   {
     path: "/detalle",
     element: <DetalleArma />
+  },
+  {
+    path:"/collections",
+    element: <Collections />
   }
 ]);
 

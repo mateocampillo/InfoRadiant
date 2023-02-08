@@ -1,5 +1,4 @@
-window.addEventListener('load', function() {
-
+const funcionMenuSidebar = () => {
     let botonSidebar = document.querySelector('#botonSidebar');
     let menuSidebar = document.querySelector('#MenuSidebarWrapper');
     let body = document.querySelector('body');
@@ -19,5 +18,7 @@ window.addEventListener('load', function() {
             body.classList.remove('stop-scroll');
         }
     })
+}
 
-})
+
+window.addEventListener('load', funcionMenuSidebar);
