@@ -18,7 +18,7 @@ function Rangos() {
             .then((res) => res.json())
             .then((data) => {
                 let objetosFiltrados = [];
-                let datosUtiles = data.data[4].tiers;
+                let datosUtiles = data.data[0].tiers;
                 datosUtiles.forEach(item => {
                     if(item.tier < 1 || item.tier > 2){
                         objetosFiltrados.push({

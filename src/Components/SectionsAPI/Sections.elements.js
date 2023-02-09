@@ -178,3 +178,81 @@ export const H4Info = styled.h4`
     text-align: center;
     margin-top: 100px;
 `;
+
+//AGENTES
+
+export const AgentesWrapper = styled.div`
+    width: 100vw;
+    position: relative;
+    z-index: 1;
+`;
+
+export const AgentesContainer = styled.div`
+    width: 100%;
+`;
+
+export const SelectContainer = styled.div`
+    width: 80%;
+    margin: 10px auto 20px;
+    h2{
+        text-align: center;
+    }
+`;
+
+export const SelectAgentes = styled.select`
+    padding: 5px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 15px auto 0px;
+    width: 50%;
+    text-align: center;
+`;
+
+export const ImgHabilidad = styled.img`
+    width: 20%;
+    filter: brightness(0%);
+`;
+
+export const UlImgContainer = styled.div`
+    margin: 15px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+`;
+
+export const ImgAgenteContainer = styled.div`
+    width: 50%;
+    margin-bottom: 10px;
+`;
+
+export const ImgAgente = styled.img`
+    width: 100%;
+    margin: 0px auto;
+`;
+
+export const InfoAgenteContainer = styled.div`
+    width: 95%;
+    margin: 0px auto;
+    border: 1px solid ${colors.lightred};
+    border-radius: 4px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`;
+
+export const UlAgentes = styled.ul`
+    list-style-type: none;
+    li{
+        margin: 20px auto;
+    }
+    h4{
+        display: inline;
+    }
+    p{
+        display: inline;
+    }
+`;
+

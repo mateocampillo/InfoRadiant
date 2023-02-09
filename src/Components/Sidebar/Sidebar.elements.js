@@ -6,6 +6,7 @@ export const SidebarWrapper = styled.header`
     background-color: ${colors.red};
     position: sticky;
     top: 0px;
+    z-index: 1000;
 `;
 
 export const SidebarContainer = styled.div`

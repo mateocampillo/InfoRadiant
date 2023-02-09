@@ -1,7 +1,16 @@
 import React,{ useState, useEffect } from 'react';
 import {
-    MainWrapper,
-    MainContainer
+    AgentesWrapper,
+    AgentesContainer,
+    DescP,
+    SelectContainer,
+    UlAgentes,
+    SelectAgentes,
+    ImgHabilidad,
+    ImgAgente,
+    InfoAgenteContainer,
+    ImgAgenteContainer,
+    UlImgContainer
 } from './Sections.elements';
 import Cargando from './Cargando';
 
@@ -24,7 +33,6 @@ function Agentes() {
                         iconSmall: agent.displayIcon,
                         iconBig: agent.fullPortrait,
                         background: agent.background,
-                        bcgColors: agent.backgroundGradientColors,
                         abilities: agent.abilities
                     })
                 })
@@ -40,7 +48,6 @@ function Agentes() {
                 setAgentSelected(agent);
             }
         })
-        console.log(agentSelected);
     }
 
     if(cargando) {
@@ -50,21 +57,41 @@ function Agentes() {
     }
 
     return (
-        <MainWrapper>
-            <MainContainer>
-            <h2>Selecciona un agente</h2>
-            <select onChange={changeSelectedAgent}>
-                {agentList.map((agent) => {
-                    return (
-                        <option value={agent.uuid}>{agent.nombre}</option>
-                    )
-                    })
-                }
-            </select>
-            {agentSelected.nombre}
-            {agentSelected.descripcion}
-            </MainContainer>
-        </MainWrapper>
+        <AgentesWrapper>
+            <AgentesContainer>
+                <SelectContainer>
+                    <h2>Selecciona un agente</h2>
+                    <SelectAgentes onChange={changeSelectedAgent}>
+                        {agentList.map((agent) => {
+                            return (
+                                <option value={agent.uuid}>{agent.nombre}</option>
+                            )
+                            })
+                        }
+                    </SelectAgentes>
+                </SelectContainer>
+                <InfoAgenteContainer>
+                    <ImgAgenteContainer>
+                        <ImgAgente alt='icon de personaje' src={agentSelected.iconSmall}/>
+                    </ImgAgenteContainer>
+                    <DescP>{agentSelected.descripcion}</DescP>
+                    <div>
+                        <h3>Habilidades:</h3>
+                        <UlAgentes>
+                            {agentSelected.abilities.map((ability) => {
+                                return (
+                                    <li>
+                                        <h4>Nombre:</h4><p> {ability.displayName}</p><br/>
+                                        <h4>Descripcion:</h4><p> {ability.description}</p><br/>
+                                        <UlImgContainer><h4>Foto:</h4><ImgHabilidad alt='icono de habilidad' src={ability.displayIcon}/></UlImgContainer>
+                                    </li>
+                                )})
+                            }
+                        </UlAgentes>
+                    </div>
+                </InfoAgenteContainer>
+            </AgentesContainer>
+        </AgentesWrapper>
     )
 
 }
