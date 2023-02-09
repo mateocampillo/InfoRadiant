@@ -19,7 +19,8 @@ import {
   Buddies,
   Mapas,
   CartasDeJugador,
-  About
+  About,
+  Agentes
 } from './Components';
 import {
   AppWrapper
@@ -69,6 +70,10 @@ const router = createBrowserRouter([
   {
     path:"/about",
     element: <About />
+  },
+  {
+    path:"/agentes",
+    element: <Agentes />
   }
 ]);
 

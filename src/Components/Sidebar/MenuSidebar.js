@@ -8,6 +8,7 @@ function MenuSidebar(){
     return (
         <MenuSidebarWrapper id='MenuSidebarWrapper' className='menuSidebarClose'>
             <MenuSidebarContainer>
+                <a href='/agentes'>Agentes</a>
                 <a href='/rangos'>Rangos</a>
                 <a href='/armas'>Armas</a>
                 <a href='/mapas'>Mapas</a>
