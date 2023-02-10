@@ -206,11 +206,14 @@ export const SelectAgentes = styled.select`
     margin: 15px auto 0px;
     width: 50%;
     text-align: center;
+    background-color: ${colors.red};
+    color: #fff;
+    border: 1px solid ${colors.mediumgray};
 `;
 
 export const ImgHabilidad = styled.img`
     width: 20%;
-    filter: brightness(0%);
+    filter: invert(27%) sepia(23%) saturate(854%) hue-rotate(177deg) brightness(70%) contrast(93%);
 `;
 
 export const UlImgContainer = styled.div`
@@ -241,6 +244,9 @@ export const InfoAgenteContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    h3{
+        color: #325793;
+    }
 `;
 
 export const UlAgentes = styled.ul`
@@ -250,6 +256,7 @@ export const UlAgentes = styled.ul`
     }
     h4{
         display: inline;
+        margin-top: 15px;
     }
     p{
         display: inline;
