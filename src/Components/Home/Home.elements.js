@@ -4,7 +4,7 @@ import PhoneBcg from '../img/PhoneBcg.png';
 import DesktopBcg from '../img/DesktopBcg.png';
 
 export const HomeWrapper = styled.main`
-    height: 93vh;
+    height: 94vh;
     width: 100%;
     background-image: url(${PhoneBcg});
     background-repeat: no-repeat;

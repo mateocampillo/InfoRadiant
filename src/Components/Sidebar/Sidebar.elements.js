@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import * as colors from '../Elements/ColorPallete';
 
 export const SidebarWrapper = styled.header`
-    width: 100%;
+    width: 100vw;
+    height: 6vh;
     background-color: ${colors.red};
     position: sticky;
     top: 0px;

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import * as colors from '../Elements/ColorPallete';
 
 export const CargandoContainer = styled.div`
-    height: 90vh;
+    height: 94vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -105,6 +105,9 @@ export const UlGridSprays = styled.ul`
     @media (min-width: 768px){
         grid-template-columns: 33% 33% 33%;
     }
+    @media (min-width: 992px){
+        grid-template-columns: 25% 25% 25% 25%;
+    }
 `;
 
 export const ImgSprays = styled.img`
@@ -135,7 +138,10 @@ export const UlGridTitulos = styled.ul`
 export const ImgArmas = styled.img`
     width: 80%;
     @media (min-width: 500px){
-        width: 70%;
+        width: 60%;
+    }
+    @media (min-width: 992px){
+        width: 60%;
     }
 `;
 
@@ -146,6 +152,11 @@ export const UlGridArmas = styled.ul`
     padding: 10px 10px;
     color: ${colors.white};
     li{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
         padding: 10px 10px;
         text-align: center;
         font-weight: 500;
@@ -158,8 +169,14 @@ export const UlGridArmas = styled.ul`
 
 //SKINS
 
-export const ImgSkins = styled.img`
+export const ImgSkinsDetalle = styled.img`
     width: 80%;
+    @media (min-width: 500px){
+        width: 60%;
+    }
+    @media (min-width: 1200px){
+        width: 50%;
+    }
 `;
 
 //BUNDLES
@@ -178,6 +195,9 @@ export const UlGridBundles = styled.ul`
     }
     @media (min-width: 768px){
         grid-template-columns: 50% 50%;
+    }
+    @media (min-width: 1200px){
+        grid-template-columns: 33% 33% 33%;
     }
 `;
 
@@ -203,6 +223,9 @@ export const UlGridBuddies = styled.ul`
     @media (min-width: 768px){
         grid-template-columns: 20% 20% 20% 20% 20%;
     }
+    @media (min-width: 992px){
+        grid-template-columns: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
+    }
 `;
 
 export const ImgBuddies = styled.img`
@@ -221,6 +244,10 @@ export const ImgMapas = styled.img`
 
 export const DivWrapperMapas = styled.div`
     width: 100%;
+    @media (min-width: 1200px){
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
 `;
 
 export const DivContainerMapas = styled.div`
@@ -257,6 +284,9 @@ export const UlGridCartas = styled.ul`
     @media (min-width: 768px){
         grid-template-columns: 50% 50%;
     }
+    @media (min-width: 1200px){
+        grid-template-columns: 33% 33% 33%;
+    }
 `;
 
 export const ImgCarta = styled.img`
@@ -279,6 +309,9 @@ export const AboutContainer = styled.div`
     }
     @media (min-width: 768px){
         width: 60%;
+    }
+    @media (min-width: 992px){
+        font-size: 1.4rem;
     }
 `;
 
@@ -337,6 +370,9 @@ export const SelectContainer = styled.div`
     @media (min-width: 768px){
         width: 60%;
     }
+    @media (min-width: 992px){
+        width: 40%;
+    }
 `;
 
 export const SelectAgentes = styled.select`
@@ -355,6 +391,12 @@ export const ImgHabilidad = styled.img`
     width: 20%;
     @media (min-width: 768px){
         width: 15%;
+    }
+    @media (min-width: 992px){
+        width: 10%;
+    }
+    @media (min-width: 1200px){
+        width: 7%;
     }
 `;
 
@@ -381,6 +423,12 @@ export const ImgAgente = styled.img`
     @media (min-width: 768px){
         width: 60%;
     }
+    @media (min-width: 992px){
+        width: 50%;
+    }
+    @media (min-width: 1200px){
+        width: 45%;
+    }
 `;
 
 export const InfoAgenteContainer = styled.div`
@@ -395,6 +443,9 @@ export const InfoAgenteContainer = styled.div`
     align-items: center;
     h3{
         color: ${colors.red};
+        @media (min-width: 768px){
+            font-size: 2rem;
+        }
     }
 `;
 
@@ -407,6 +458,9 @@ export const UlAgentes = styled.ul`
         display: inline;
         margin-top: 15px;
         color: ${colors.pink};
+        @media (min-width: 768px){
+            font-size: 1.2rem;
+        }
     }
     p{
         display: inline;

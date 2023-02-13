@@ -5,7 +5,7 @@ import {
     TituloH2,
     DescP,
     UlGridArmas,
-    ImgSkins
+    ImgSkinsDetalle
 } from './Sections.elements';
 import Cargando from './Cargando';
 
@@ -38,7 +38,7 @@ function DetalleArma() {
                     objeto.titulo = objeto.titulo.replace(nombreArma, '');
                     return (
                         <li key={objeto.uuid}>
-                            <ImgSkins alt='Skin default' src={objeto.icon}/><br/>
+                            <ImgSkinsDetalle alt='Skin default' src={objeto.icon}/><br/>
                             {objeto.titulo}
                         </li>
                     )
