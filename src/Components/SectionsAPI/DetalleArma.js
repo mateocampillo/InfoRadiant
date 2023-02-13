@@ -4,7 +4,7 @@ import {
     MainWrapper,
     TituloH2,
     DescP,
-    UlGrid,
+    UlGridArmas,
     ImgSkins
 } from './Sections.elements';
 import Cargando from './Cargando';
@@ -35,6 +35,7 @@ function DetalleArma() {
                     }
                 });
                 let listaSkin = collectionsSkins.map((objeto) => {
+                    objeto.titulo = objeto.titulo.replace(nombreArma, '');
                     return (
                         <li key={objeto.uuid}>
                             <ImgSkins alt='Skin default' src={objeto.icon}/><br/>
@@ -48,7 +49,7 @@ function DetalleArma() {
             .catch((err) => {
                 console.log(err);
             });
-    }, [query]);
+    }, [query, nombreArma]);
 
     if(cargando) {
         return (
@@ -62,9 +63,9 @@ function DetalleArma() {
                 <TituloH2>Skins de VALORANT</TituloH2>
                 <DescP>Esta es toda la info actual de {nombreArma} en VALORANT</DescP>
                 <DescP>Hay {lista.length} skins de {nombreArma} en el juego</DescP>
-                <UlGrid>
+                <UlGridArmas>
                     {lista}
-                </UlGrid>
+                </UlGridArmas>
             </MainContainer>
         </MainWrapper>
     )

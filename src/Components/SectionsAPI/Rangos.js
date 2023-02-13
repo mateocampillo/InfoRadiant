@@ -4,7 +4,7 @@ import {
     MainWrapper,
     TituloH2,
     DescP,
-    UlGrid,
+    UlGridRangos,
 } from './Sections.elements';
 import Cargando from './Cargando';
 
@@ -20,7 +20,7 @@ function Rangos() {
                 let objetosFiltrados = [];
                 let datosUtiles = data.data[0].tiers;
                 datosUtiles.forEach(item => {
-                    if(item.tier < 1 || item.tier > 2){
+                    if(item.tier > 2){
                         objetosFiltrados.push({
                             tier: item.tier,
                             titulo: item.tierName,
@@ -54,9 +54,9 @@ function Rangos() {
             <MainContainer>
                 <TituloH2>Rangos de VALORANT</TituloH2>
                 <DescP>Estos son, de menor a mayor categoria, todos los rangos actuales en VALORANT</DescP>
-                <UlGrid>
+                <UlGridRangos>
                     {lista}
-                </UlGrid>
+                </UlGridRangos>
             </MainContainer>
         </MainWrapper>
     )

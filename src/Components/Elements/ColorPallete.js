@@ -6,3 +6,6 @@ export const pink = "#b38c8f";
 export const blue = "#364966";
 export const lightgray = '#F1F6F5';
 export const mediumgray = '#dadada';
+export const navy = '#001f3f';
+export const white = '#fff';
+export const black = '#000';

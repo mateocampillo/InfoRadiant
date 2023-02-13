@@ -37,7 +37,7 @@ function Buddies() {
                         <HrCustom />
                         <h2>{item.titulo}</h2>
                         <Link to={`${item.iconGrande}`} target={'_blank'}><ImgMapas alt='Spray' src={item.iconLista}/></Link>
-                        <DescP>Cordenadas: {item.coordenadas}</DescP>
+                        <DescP>Coordenadas: {item.coordenadas}</DescP>
                     </DivContainerMapas>
                 );
                 setLista(listItems);

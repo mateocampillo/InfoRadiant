@@ -4,7 +4,7 @@ import {
     MainWrapper,
     TituloH2,
     DescP,
-    UlGrid,
+    UlGridTitulos,
 } from './Sections.elements';
 import Cargando from './Cargando';
 
@@ -49,9 +49,9 @@ function PlayerTitles() {
             <MainContainer>
                 <TituloH2>Titulos de jugador</TituloH2>
                 <DescP>Estos son todos los titulos de jugador actuales en VALORANT</DescP>
-                <UlGrid>
+                <UlGridTitulos>
                     {lista}
-                </UlGrid>
+                </UlGridTitulos>
             </MainContainer>
         </MainWrapper>
     )

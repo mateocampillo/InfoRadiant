@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 import {
     MainContainer,
     MainWrapper,
     TituloH2,
     DescP,
-    UlGridSingle,
+    UlGridBundles,
     ImgBundles
 } from './Sections.elements';
 import Cargando from './Cargando';
@@ -31,7 +32,7 @@ function Bundles() {
                 let listaSkin = arrBundles.map((bundle) => {
                     return (
                         <li key={bundle.uuid}>
-                            <ImgBundles alt='Imagen de bundle' src={bundle.iconHorizontal}/><br/>
+                            <Link to={bundle.iconHorizontal}><ImgBundles alt='Imagen de bundle' src={bundle.iconHorizontal}/></Link><br/>
                             {bundle.titulo}
                         </li>
                     )
@@ -56,9 +57,9 @@ function Bundles() {
                 <TituloH2>Bundles de VALORANT</TituloH2>
                 <DescP>Esta es toda la info actual de todos los bundles en VALORANT</DescP>
                 <DescP>Hay {lista.length} bundles en el juego</DescP>
-                <UlGridSingle>
+                <UlGridBundles>
                     {lista}
-                </UlGridSingle>
+                </UlGridBundles>
             </MainContainer>
         </MainWrapper>
     )

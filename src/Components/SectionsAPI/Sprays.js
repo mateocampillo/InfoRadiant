@@ -4,7 +4,7 @@ import {
     MainWrapper,
     TituloH2,
     DescP,
-    UlGrid,
+    UlGridSprays,
     ImgSprays
 } from './Sections.elements';
 import Cargando from './Cargando';
@@ -56,9 +56,9 @@ function Sprays() {
             <MainContainer>
                 <TituloH2>Sprays de VALORANT</TituloH2>
                 <DescP>Estos son todos los sprays actuales en VALORANT</DescP>
-                <UlGrid>
+                <UlGridSprays>
                     {lista}
-                </UlGrid>
+                </UlGridSprays>
             </MainContainer>
         </MainWrapper>
     )

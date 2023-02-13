@@ -4,7 +4,7 @@ import {
     MainWrapper,
     TituloH2,
     DescP,
-    UlGridTriple,
+    UlGridBuddies,
     ImgBuddies
 } from './Sections.elements';
 import Cargando from './Cargando';
@@ -53,9 +53,9 @@ function Buddies() {
             <MainContainer>
                 <TituloH2>Buddies de VALORANT</TituloH2>
                 <DescP>Estos son los {lista.length} buddies presentes en VALORANT</DescP>
-                <UlGridTriple>
+                <UlGridBuddies>
                     {lista}
-                </UlGridTriple>
+                </UlGridBuddies>
             </MainContainer>
         </MainWrapper>
     )

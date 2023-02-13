@@ -7,19 +7,22 @@ export const CargandoContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: ${colors.navy};
     h4{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         margin-top: 10px;
+        color: ${colors.white};
     }
     svg{
-        font-size: 2.5rem;
+        font-size: 4rem;
+        color: ${colors.white};
     }
 
 `;
 
 export const MainWrapper = styled.div`
     width: 100vw;
-    background-color: ${colors.lightgray};
+    background-color: ${colors.navy};
 `;
 
 export const MainContainer = styled.div`
@@ -29,6 +32,7 @@ export const MainContainer = styled.div`
 export const TituloH2 = styled.h2`
     text-align: center;
     padding: 15px 0px;
+    color: ${colors.white};
 `;
 
 export const DescP = styled.p`
@@ -36,9 +40,10 @@ export const DescP = styled.p`
     margin-left: 8px;
     padding: 15px 0px;
     font-size: 1.1rem;
+    color: ${colors.white};
     a{
         text-decoration: none;
-        color: #000;
+        color: ${colors.white};
     }
 `;
 
@@ -50,13 +55,12 @@ export const HrCustom = styled.hr`
     margin: 10px auto;
 `;
 
-//RANGOS
-
-export const UlGrid = styled.ul`
+export const UlGridSingle = styled.ul`
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 100%;
     list-style-type: none;
     padding: 10px 10px;
+    color: ${colors.white};
     li{
         padding: 10px 10px;
         text-align: center;
@@ -65,16 +69,91 @@ export const UlGrid = styled.ul`
     }
 `;
 
+//RANGOS
+
+export const UlGridRangos = styled.ul`
+    display: grid;
+    grid-template-columns: 50% 50%;
+    list-style-type: none;
+    padding: 10px 10px;
+    color: ${colors.white};
+    li{
+        padding: 10px 10px;
+        text-align: center;
+        font-weight: 500;
+        border: 1px solid ${colors.mediumgray};
+    }
+    @media (min-width: 768px){
+        grid-template-columns: 33% 33% 33%;
+    }
+`;
+
 //SPRAYS
+
+export const UlGridSprays = styled.ul`
+    display: grid;
+    grid-template-columns: 50% 50%;
+    list-style-type: none;
+    padding: 10px 10px;
+    color: ${colors.white};
+    li{
+        padding: 10px 10px;
+        text-align: center;
+        font-weight: 500;
+        border: 1px solid ${colors.mediumgray};
+    }
+    @media (min-width: 768px){
+        grid-template-columns: 33% 33% 33%;
+    }
+`;
 
 export const ImgSprays = styled.img`
     width: 70%;
+`;
+
+//PLAYER TITLES
+
+export const UlGridTitulos = styled.ul`
+    display: grid;
+    grid-template-columns: 50% 50%;
+    list-style-type: none;
+    padding: 10px 10px;
+    color: ${colors.white};
+    li{
+        padding: 10px 10px;
+        text-align: center;
+        font-weight: 500;
+        border: 1px solid ${colors.mediumgray};
+    }
+    @media (min-width: 768px){
+        grid-template-columns: 33% 33% 33%;
+    }
 `;
 
 //ARMAS
 
 export const ImgArmas = styled.img`
     width: 80%;
+    @media (min-width: 500px){
+        width: 70%;
+    }
+`;
+
+export const UlGridArmas = styled.ul`
+    display: grid;
+    grid-template-columns: 50% 50%;
+    list-style-type: none;
+    padding: 10px 10px;
+    color: ${colors.white};
+    li{
+        padding: 10px 10px;
+        text-align: center;
+        font-weight: 500;
+        border: 1px solid ${colors.mediumgray};
+    }
+    @media (min-width: 768px){
+        grid-template-columns: 33% 33% 33%;
+    }
 `;
 
 //SKINS
@@ -85,46 +164,59 @@ export const ImgSkins = styled.img`
 
 //BUNDLES
 
-export const UlGridSingle = styled.ul`
+export const UlGridBundles = styled.ul`
     display: grid;
     grid-template-columns: 100%;
     list-style-type: none;
     padding: 10px 10px;
+    color: ${colors.white};
     li{
         padding: 10px 10px;
         text-align: center;
         font-weight: 500;
         border: 1px solid ${colors.mediumgray};
+    }
+    @media (min-width: 768px){
+        grid-template-columns: 50% 50%;
     }
 `;
 
 export const ImgBundles = styled.img`
     width: 100%;
+    cursor: pointer;
 `;
 
 //BUDDIES
 
-export const UlGridTriple = styled.ul`
+export const UlGridBuddies = styled.ul`
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     list-style-type: none;
     padding: 10px 10px;
+    color: ${colors.white};
     li{
         padding: 10px 10px;
         text-align: center;
         font-weight: 500;
         border: 1px solid ${colors.mediumgray};
     }
+    @media (min-width: 768px){
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
 `;
 
 export const ImgBuddies = styled.img`
     width: 100%;
+    @media (min-width: 500px){
+        max-height: 135px;
+    }
 `;
 
 //MAPAS
 
 export const ImgMapas = styled.img`
     width: 100%;
+    border: 1px solid ${colors.white};
 `;
 
 export const DivWrapperMapas = styled.div`
@@ -141,19 +233,53 @@ export const DivContainerMapas = styled.div`
     h2{
         font-weight: 500;
         margin-bottom: 10px;
+        color: ${colors.white};
+    }
+    @media (min-width: 768px){
+        width: 100%;
     }
 `;
 
 //CARTAS
 
+export const UlGridCartas = styled.ul`
+    display: grid;
+    grid-template-columns: 100%;
+    list-style-type: none;
+    padding: 10px 10px;
+    color: ${colors.white};
+    li{
+        padding: 10px 10px;
+        text-align: center;
+        font-weight: 500;
+        border: 1px solid ${colors.mediumgray};
+    }
+    @media (min-width: 768px){
+        grid-template-columns: 50% 50%;
+    }
+`;
+
 export const ImgCarta = styled.img`
     width: 90%;
+    cursor: pointer;
 `;
 
 //ABOUT 
 
+export const AboutWrapper = styled.div`
+    width: 100vw;
+    background-color: ${colors.navy};
+`;
+
 export const AboutContainer = styled.div`
     height: 93vh;
+    margin: 0px auto;
+    @media (min-width: 500px){
+        width: 80%;
+    }
+    @media (min-width: 768px){
+        width: 60%;
+    }
 `;
 
 export const AboutInfo = styled.div`
@@ -161,6 +287,7 @@ export const AboutInfo = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    color: ${colors.white};
     div{
         margin: 0px auto;
         ul{
@@ -170,11 +297,17 @@ export const AboutInfo = styled.div`
             }
         }
     }
+    @media (min-width: 500px){
+        height: 60vh;
+    }
+    @media (min-width: 768px){
+        height: 70vh;
+    }
 `;
 
 export const H4Info = styled.h4`
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 2rem;
     text-align: center;
     margin-top: 100px;
 `;
@@ -189,13 +322,20 @@ export const AgentesWrapper = styled.div`
 
 export const AgentesContainer = styled.div`
     width: 100%;
+    background-color: ${colors.navy};
+    padding-bottom: 10px;
 `;
 
 export const SelectContainer = styled.div`
     width: 80%;
-    margin: 10px auto 20px;
+    padding-top: 10px;
+    margin: 0px auto 20px;
     h2{
         text-align: center;
+        color: ${colors.white};
+    }
+    @media (min-width: 768px){
+        width: 60%;
     }
 `;
 
@@ -213,7 +353,9 @@ export const SelectAgentes = styled.select`
 
 export const ImgHabilidad = styled.img`
     width: 20%;
-    filter: invert(27%) sepia(23%) saturate(854%) hue-rotate(177deg) brightness(70%) contrast(93%);
+    @media (min-width: 768px){
+        width: 15%;
+    }
 `;
 
 export const UlImgContainer = styled.div`
@@ -227,11 +369,18 @@ export const UlImgContainer = styled.div`
 export const ImgAgenteContainer = styled.div`
     width: 50%;
     margin-bottom: 10px;
+    display: grid;
 `;
 
 export const ImgAgente = styled.img`
     width: 100%;
     margin: 0px auto;
+    @media (min-width: 500px){
+        width: 80%;
+    }
+    @media (min-width: 768px){
+        width: 60%;
+    }
 `;
 
 export const InfoAgenteContainer = styled.div`
@@ -245,7 +394,7 @@ export const InfoAgenteContainer = styled.div`
     justify-content: center;
     align-items: center;
     h3{
-        color: #325793;
+        color: ${colors.red};
     }
 `;
 
@@ -257,9 +406,11 @@ export const UlAgentes = styled.ul`
     h4{
         display: inline;
         margin-top: 15px;
+        color: ${colors.pink};
     }
     p{
         display: inline;
+        color: ${colors.white};
     }
 `;
 

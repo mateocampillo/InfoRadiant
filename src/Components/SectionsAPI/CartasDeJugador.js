@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 import {
     MainContainer,
     MainWrapper,
     TituloH2,
     DescP,
-    UlGridSingle,
+    UlGridCartas,
     ImgCarta
 } from './Sections.elements';
 import Cargando from './Cargando';
@@ -32,7 +33,7 @@ function CartasDeJugador() {
 
                 let listItems = cartasFiltrados.map((item) => 
                 <li key={item.uuid}>
-                    <ImgCarta alt='Carta de jugador' src={item.iconAncho}/><br/>
+                    <Link to={item.iconAlto}><ImgCarta alt='Carta de jugador' src={item.iconAncho}/></Link><br/>
                     {item.titulo}
                 </li>
                 );
@@ -55,9 +56,9 @@ function CartasDeJugador() {
             <MainContainer>
                 <TituloH2>Cartas de jugador</TituloH2>
                 <DescP>Estos son las {lista.length} cartas disponibles en Valorant.</DescP>
-                <UlGridSingle>
+                <UlGridCartas>
                     {lista}
-                </UlGridSingle>
+                </UlGridCartas>
             </MainContainer>
         </MainWrapper>
     )

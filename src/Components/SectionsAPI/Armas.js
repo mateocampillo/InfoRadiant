@@ -5,7 +5,7 @@ import {
     MainWrapper,
     TituloH2,
     DescP,
-    UlGrid,
+    UlGridArmas,
     ImgArmas
 } from './Sections.elements';
 import Cargando from './Cargando';
@@ -82,9 +82,9 @@ function Armas() {
             <MainContainer>
                 <TituloH2>Armas de VALORANT</TituloH2>
                 <DescP>Estos son todas las armas actuales en VALORANT</DescP>
-                <UlGrid>
+                <UlGridArmas>
                     {lista}
-                </UlGrid>
+                </UlGridArmas>
             </MainContainer>
         </MainWrapper>
     )
