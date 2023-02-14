@@ -3,8 +3,7 @@ const funcionMenuSidebarMobile = () => {
     let menuSidebar = document.querySelector('#MenuSidebarWrapper');
     let body = document.querySelector('body');
 
-    botonSidebar.addEventListener('touchstart', function(e) {
-        e.preventDefault();
+    botonSidebar.addEventListener('touchstart', function() {
         if(menuSidebar.classList.contains('menuSidebarClose')){
             menuSidebar.classList.remove('menuSidebarClose');
             menuSidebar.classList.add('menuSidebarAnimOpen');

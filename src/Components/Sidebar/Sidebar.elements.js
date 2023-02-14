@@ -15,7 +15,7 @@ export const SidebarContainer = styled.div`
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 12px 0px;
+    padding: 4px 0px;
     a{
         text-decoration: none;
         color: #fff;
@@ -31,24 +31,26 @@ export const SidebarContainer = styled.div`
     }
 `;
 
-// export const SidebarButton = styled.button`
-//     background: none;
-//     border: none;
-//     margin: 3px 0px;
-//     cursor: pointer;
-//     svg{
-//         font-size: 2.5rem;
-//         color: #fff;
-//         margin: 0px auto;
-//         pointer-events: none;
-//         path{
-//             pointer-events: none;
-//         }
-//         @media (min-width: 992px){
-//             font-size: 2.8rem;
-//         }
-//     }
-// `;
+export const SidebarButton = styled.button`
+    background: none;
+    border: none;
+    margin: 3px 0px;
+    cursor: pointer;
+    position: relative;
+    z-index: 20000;
+    svg{
+        font-size: 2.5rem;
+        color: #fff;
+        margin: 0px auto;
+        pointer-events: none;
+        path{
+            pointer-events: none;
+        }
+        @media (min-width: 992px){
+            font-size: 2.8rem;
+        }
+    }
+`;
 
 export const MenuSidebarWrapper = styled.div`
     font-family: 'Inter', sans-serif;
