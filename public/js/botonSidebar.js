@@ -19,7 +19,7 @@ const funcionMenuSidebar = () => {
         }
     });
 
-    botonSidebar.addEventListener('touchstart', function() {
+    botonSidebar.addEventListener('touchend', function() {
         if(menuSidebar.classList.contains('menuSidebarClose')){
             menuSidebar.classList.remove('menuSidebarClose');
             menuSidebar.classList.add('menuSidebarAnimOpen');
@@ -34,6 +34,7 @@ const funcionMenuSidebar = () => {
             body.classList.remove('stop-scroll');
         }
     });
+    
 }
 
 
