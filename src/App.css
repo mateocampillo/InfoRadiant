@@ -11,6 +11,18 @@ body{
 body::-webkit-scrollbar{
     display: none;
 }
+/* Hide the scrollbar */
+html::-webkit-scrollbar {
+    width: 0px !important;
+    background-color: transparent !important;
+}
+
+/* Enable scrolling using mouse or trackpad */
+html {
+scrollbar-width: none !important; /* For Firefox */
+-ms-overflow-style: none !important; /* For Internet Explorer and Edge */
+}
+
 /* Animacion de menu Sidebar */
 .stop-scroll{
     height: 100%;

@@ -1,17 +1,17 @@
 
 # Info Radiant
 
-Este projecto tiene como objetivo crear una interfaz clara, bonita y fácil de leer para consumir la API no oficial de VALORANT, [Dashboard-API](https://dash.valorant-api.com/).
+Este [projecto](https://info-radiant.vercel.app/) tiene como objetivo crear una interfaz clara, bonita y fácil de leer para consumir la API no oficial de VALORANT, [Dashboard-API](https://dash.valorant-api.com/).
 
 
 ## Agradecimientos
 
- - Muchas gracias a la [API](https://awesomeopensource.com/project/elangosundar/awesome-README-templates), sin la misma no hubiera podido concretar la idea, ni tampoco lo hubiera pensado ya que la idea surgio de encontrarmela una tarde :D
+ - Muchas gracias a la [API](https://dash.valorant-api.com/), sin la misma no hubiera podido concretar la idea, ni tampoco lo hubiera pensado ya que la idea surgio de encontrarmela una tarde :D
 
 
 ## Clonar el projecto de forma local
 
-Este project esta alojado en Vercel, sin embargo, si deseas clonarlo para investigarlo o modificarlo de forma local, estos son los pasos:
+Este project esta alojado en [Vercel](https://info-radiant.vercel.app/), sin embargo, si deseas clonarlo para investigarlo o modificarlo de forma local, estos son los pasos:
 
 Clonar el projecto
 

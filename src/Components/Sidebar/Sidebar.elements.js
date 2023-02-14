@@ -35,6 +35,7 @@ export const SidebarButton = styled.button`
     background: none;
     border: none;
     margin: 3px 0px;
+    cursor: pointer;
     svg{
         font-size: 2.5rem;
         color: #fff;
