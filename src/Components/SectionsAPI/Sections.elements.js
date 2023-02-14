@@ -158,9 +158,6 @@ export const ImgArmas = styled.img`
     @media (min-width: 500px){
         width: 60%;
     }
-    @media (min-width: 1200px){
-        width: 70%;
-    }
 `;
 
 export const UlGridArmas = styled.ul`
