@@ -53,7 +53,7 @@ function Rangos() {
         <MainWrapper>
             <MainContainer>
                 <TituloH2>Rangos de VALORANT</TituloH2>
-                <DescP>Estos son, de menor a mayor categoria, todos los rangos actuales en VALORANT</DescP>
+                <DescP>Estos son, de menor a mayor categoria, todos los rangos actuales en VALORANT.<br/>La estadistica del episodio 5 demuestra que el jugador promedio se encuentra entre los rangos Bronze (17%), Plata (21.9%) y Oro (20.8%)</DescP>
                 <UlGridRangos>
                     {lista}
                 </UlGridRangos>

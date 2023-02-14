@@ -48,7 +48,7 @@ function PlayerTitles() {
         <MainWrapper>
             <MainContainer>
                 <TituloH2>Titulos de jugador</TituloH2>
-                <DescP>Estos son todos los titulos de jugador actuales en VALORANT</DescP>
+                <DescP>Estos son los {lista.length} titulos de jugador actuales en VALORANT. ¡Explora todos y descubre cual te caracteriza!</DescP>
                 <UlGridTitulos>
                     {lista}
                 </UlGridTitulos>

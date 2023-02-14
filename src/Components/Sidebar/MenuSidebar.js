@@ -8,16 +8,16 @@ function MenuSidebar(){
     return (
         <MenuSidebarWrapper id='MenuSidebarWrapper' className='menuSidebarClose'>
             <MenuSidebarContainer>
-                <a href='/agentes'>Agentes</a>
-                <a href='/rangos'>Rangos</a>
-                <a href='/armas'>Armas</a>
-                <a href='/mapas'>Mapas</a>
-                <a href='/cartas'>Cartas de jugador</a>
-                <a href='/bundles'>Bundles</a>
-                <a href='/sprays'>Sprays</a>
-                <a href='/buddies'>Buddies</a>
-                <a href='/player-titles'>Titulos de jugador</a>
-                <a href='/about'>About</a>
+                <div><a href='/agentes'>Agentes</a></div>
+                <div><a href='/rangos'>Rangos</a></div>
+                <div><a href='/armas'>Armas</a></div>
+                <div><a href='/mapas'>Mapas</a></div>
+                <div><a href='/cartas'>Cartas de jugador</a></div>
+                <div><a href='/bundles'>Bundles</a></div>
+                <div><a href='/sprays'>Sprays</a></div>
+                <div><a href='/buddies'>Buddies</a></div>
+                <div><a href='/player-titles'>Titulos de jugador</a></div>
+                <div><a href='/about'>About</a></div>
             </MenuSidebarContainer>
         </MenuSidebarWrapper>
     )

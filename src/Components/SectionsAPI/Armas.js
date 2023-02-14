@@ -57,6 +57,14 @@ function Armas() {
                         defaultSkinUuid: item.defaultSkinUuid
                     })
                 });
+
+                //Ordeno la frenzy y la classic asi van al final, por temas esteticos: La imagen obtenida de la API es demasido grande en comparacion.
+                let frenzy = objetosFiltrados.splice(7, 1)[0];
+                let classic = objetosFiltrados.splice(7, 1)[0];
+                objetosFiltrados.splice(16, 0, frenzy);
+                objetosFiltrados.splice(17, 0, classic);
+                //
+                
                 let listItems = objetosFiltrados.map((item) => 
                 <li key={item.tier}>
                     <Link to={`/detalle/?weapon=${item.uuid}`}><ImgArmas alt='Skin default' src={item.defaultSkinUuid}/></Link><br/>
@@ -81,7 +89,7 @@ function Armas() {
         <MainWrapper>
             <MainContainer>
                 <TituloH2>Armas de VALORANT</TituloH2>
-                <DescP>Estos son todas las armas actuales en VALORANT</DescP>
+                <DescP>Explora todas las armas actuales en VALORANT en esta lista completa. Haz clic en cada una para descubrir su colección completa de cosméticos.</DescP>
                 <UlGridArmas>
                     {lista}
                 </UlGridArmas>

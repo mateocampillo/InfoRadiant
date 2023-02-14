@@ -52,7 +52,7 @@ function Buddies() {
         <MainWrapper>
             <MainContainer>
                 <TituloH2>Buddies de VALORANT</TituloH2>
-                <DescP>Estos son los {lista.length} buddies presentes en VALORANT</DescP>
+                <DescP>Descubre la lista completa de Buddies de VALORANT en un formato visual fácil de usar. Navega a través de la selección única de {lista.length} diseños adorables y temáticas intensas para encontrar el complemento perfecto para tu estilo de juego.</DescP>
                 <UlGridBuddies>
                     {lista}
                 </UlGridBuddies>

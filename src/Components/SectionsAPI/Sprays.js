@@ -55,7 +55,7 @@ function Sprays() {
         <MainWrapper>
             <MainContainer>
                 <TituloH2>Sprays de VALORANT</TituloH2>
-                <DescP>Estos son todos los sprays actuales en VALORANT</DescP>
+                <DescP>¡Agrega un toque de personalidad a tus partidas de VALORANT con Sprays! Encuentra diseños divertidos e intensos, algunos de ellos con versiones animadas. Haz que tu estilo de juego sea único. ¡Explora los {lista.length} sprays!</DescP>
                 <UlGridSprays>
                     {lista}
                 </UlGridSprays>

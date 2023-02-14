@@ -36,7 +36,7 @@ function Buddies() {
                     <DivContainerMapas>
                         <HrCustom />
                         <h2>{item.titulo}</h2>
-                        <Link to={`${item.iconGrande}`} target={'_blank'}><ImgMapas alt='Spray' src={item.iconLista}/></Link>
+                        <Link to={`${item.iconGrande}`} target={'_blank'} rel={'noreferrer'}><ImgMapas alt='Spray' src={item.iconLista}/></Link>
                         <DescP>Coordenadas: {item.coordenadas}</DescP>
                     </DivContainerMapas>
                 );
@@ -58,7 +58,7 @@ function Buddies() {
         <MainWrapper>
             <MainContainer>
                 <TituloH2>Mapas de VALORANT</TituloH2>
-                <DescP>Estos son los {lista.length} mapas presentes en VALORANT</DescP>
+                <DescP>Descubre los {lista.length} mapas de VALORANT en esta sección. Explora la imagen ampliable y conoce sus coordenadas en el juego (buena suerte introduciendolas en el GPS).</DescP>
                 <DivWrapperMapas>
                     {lista}
                 </DivWrapperMapas>

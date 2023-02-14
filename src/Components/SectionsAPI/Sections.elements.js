@@ -33,6 +33,9 @@ export const TituloH2 = styled.h2`
     text-align: center;
     padding: 15px 0px;
     color: ${colors.white};
+    @media (min-width: 1200px){
+        font-size: 2rem;
+    }
 `;
 
 export const DescP = styled.p`
@@ -44,6 +47,10 @@ export const DescP = styled.p`
     a{
         text-decoration: none;
         color: ${colors.white};
+    }
+    @media (min-width: 1200px){
+        font-size: 1.5rem;
+        text-align: center;
     }
 `;
 
@@ -86,6 +93,9 @@ export const UlGridRangos = styled.ul`
     @media (min-width: 768px){
         grid-template-columns: 33% 33% 33%;
     }
+    @media (min-width: 1200px){
+        font-size: 1.3rem;
+    }
 `;
 
 //SPRAYS
@@ -107,6 +117,10 @@ export const UlGridSprays = styled.ul`
     }
     @media (min-width: 992px){
         grid-template-columns: 25% 25% 25% 25%;
+    }
+    @media (min-width: 1200px){
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        font-size: 1.3rem;
     }
 `;
 
@@ -131,6 +145,10 @@ export const UlGridTitulos = styled.ul`
     @media (min-width: 768px){
         grid-template-columns: 33% 33% 33%;
     }
+    @media (min-width: 1200px){
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        font-size: 1.3rem;
+    }
 `;
 
 //ARMAS
@@ -140,8 +158,8 @@ export const ImgArmas = styled.img`
     @media (min-width: 500px){
         width: 60%;
     }
-    @media (min-width: 992px){
-        width: 60%;
+    @media (min-width: 1200px){
+        width: 70%;
     }
 `;
 
@@ -164,6 +182,9 @@ export const UlGridArmas = styled.ul`
     }
     @media (min-width: 768px){
         grid-template-columns: 33% 33% 33%;
+    }
+    @media (min-width: 1200px){
+        font-size: 1.3rem;
     }
 `;
 
@@ -199,6 +220,9 @@ export const UlGridBundles = styled.ul`
     @media (min-width: 1200px){
         grid-template-columns: 33% 33% 33%;
     }
+    @media (min-width: 1200px){
+        font-size: 1.3rem;
+    }
 `;
 
 export const ImgBundles = styled.img`
@@ -220,11 +244,17 @@ export const UlGridBuddies = styled.ul`
         font-weight: 500;
         border: 1px solid ${colors.mediumgray};
     }
-    @media (min-width: 768px){
+    @media (min-width: 500px){
         grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+    @media (min-width: 768px){
+        grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
     }
     @media (min-width: 992px){
         grid-template-columns: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
+    }
+    @media (min-width: 1200px){
+        grid-template-columns: 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33%;
     }
 `;
 
@@ -287,6 +317,10 @@ export const UlGridCartas = styled.ul`
     @media (min-width: 1200px){
         grid-template-columns: 33% 33% 33%;
     }
+    @media (min-width: 1200px){
+        grid-template-columns: 25% 25% 25% 25%;
+        font-size: 1.3rem;
+    }
 `;
 
 export const ImgCarta = styled.img`
@@ -302,7 +336,7 @@ export const AboutWrapper = styled.div`
 `;
 
 export const AboutContainer = styled.div`
-    height: 93vh;
+    height: 94vh;
     margin: 0px auto;
     @media (min-width: 500px){
         width: 80%;
@@ -366,12 +400,18 @@ export const SelectContainer = styled.div`
     h2{
         text-align: center;
         color: ${colors.white};
+        @media (min-width: 1200px){
+        font-size: 2rem;
+    }
     }
     @media (min-width: 768px){
         width: 60%;
     }
     @media (min-width: 992px){
         width: 40%;
+    }
+    @media (min-width: 1200px){
+        width: 25%;
     }
 `;
 
@@ -385,6 +425,10 @@ export const SelectAgentes = styled.select`
     background-color: ${colors.red};
     color: #fff;
     border: 1px solid ${colors.mediumgray};
+    @media (min-width: 992px){
+        width: 40%;
+        font-size: 1.4rem;
+    }
 `;
 
 export const ImgHabilidad = styled.img`
@@ -429,6 +473,9 @@ export const ImgAgente = styled.img`
     @media (min-width: 1200px){
         width: 45%;
     }
+    @media (min-width: 1200px){
+        width: 25%;
+    }
 `;
 
 export const InfoAgenteContainer = styled.div`
@@ -461,10 +508,16 @@ export const UlAgentes = styled.ul`
         @media (min-width: 768px){
             font-size: 1.2rem;
         }
+        @media (min-width: 1200px){
+            font-size: 1.5rem;
+        }
     }
     p{
         display: inline;
         color: ${colors.white};
+        @media (min-width: 1200px){
+            font-size: 1.3rem;
+        }
     }
 `;
 

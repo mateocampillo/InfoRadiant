@@ -61,7 +61,7 @@ function DetalleArma() {
         <MainWrapper>
             <MainContainer>
                 <TituloH2>Skins de VALORANT</TituloH2>
-                <DescP>Esta es toda la info actual de {nombreArma} en VALORANT</DescP>
+                <DescP>Explora la colección completa de skins para {nombreArma} en VALORANT. Cada skin es única y te ofrece un estilo distinto en el campo de batalla. ¡Descubre todas las opciones disponibles aquí!</DescP>
                 <DescP>Hay {lista.length} skins de {nombreArma} en el juego</DescP>
                 <UlGridArmas>
                     {lista}

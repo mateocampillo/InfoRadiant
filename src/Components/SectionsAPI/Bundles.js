@@ -32,7 +32,7 @@ function Bundles() {
                 let listaSkin = arrBundles.map((bundle) => {
                     return (
                         <li key={bundle.uuid}>
-                            <Link to={bundle.iconHorizontal}><ImgBundles alt='Imagen de bundle' src={bundle.iconHorizontal}/></Link><br/>
+                            <Link to={bundle.iconHorizontal} rel={'noreferrer'} target={'_blank'}><ImgBundles alt='Imagen de bundle' src={bundle.iconHorizontal}/></Link><br/>
                             {bundle.titulo}
                         </li>
                     )
@@ -55,7 +55,7 @@ function Bundles() {
         <MainWrapper>
             <MainContainer>
                 <TituloH2>Bundles de VALORANT</TituloH2>
-                <DescP>Esta es toda la info actual de todos los bundles en VALORANT</DescP>
+                <DescP>Aquí encontrarás la selección más completa de paquetes de personalización para tus agentes favoritos. Desde skins elegantes hasta temáticas impresionantes, estos bundles te ayudarán a destacarte en cada partida y darle un toque único a tu estilo de juego. Descubre lo que cada uno de estos packs tiene para ofrecer y elige el que mejor se adapte a tus gustos.</DescP>
                 <DescP>Hay {lista.length} bundles en el juego</DescP>
                 <UlGridBundles>
                     {lista}

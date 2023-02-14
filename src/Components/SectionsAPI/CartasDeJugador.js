@@ -33,7 +33,7 @@ function CartasDeJugador() {
 
                 let listItems = cartasFiltrados.map((item) => 
                 <li key={item.uuid}>
-                    <Link to={item.iconAlto}><ImgCarta alt='Carta de jugador' src={item.iconAncho}/></Link><br/>
+                    <Link to={item.iconAlto} rel={'noreferrer'} target={'_blank'}><ImgCarta alt='Carta de jugador' src={item.iconAncho}/></Link><br/>
                     {item.titulo}
                 </li>
                 );
@@ -55,7 +55,7 @@ function CartasDeJugador() {
         <MainWrapper>
             <MainContainer>
                 <TituloH2>Cartas de jugador</TituloH2>
-                <DescP>Estos son las {lista.length} cartas disponibles en Valorant.</DescP>
+                <DescP>Personaliza tu perfil de jugador en VALORANT con una amplia selección de {lista.length} imágenes de perfil disponibles. Haz clic en cada una para verla en su formato completo y encontrar la que mejor refleje tu estilo de juego.</DescP>
                 <UlGridCartas>
                     {lista}
                 </UlGridCartas>
