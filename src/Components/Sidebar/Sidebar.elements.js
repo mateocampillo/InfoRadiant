@@ -42,10 +42,6 @@ export const SidebarButton = styled.button`
         font-size: 2.5rem;
         color: #fff;
         margin: 0px auto;
-        pointer-events: none;
-        path{
-            pointer-events: none;
-        }
         @media (min-width: 992px){
             font-size: 2.8rem;
         }
