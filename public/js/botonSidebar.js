@@ -3,7 +3,7 @@ const funcionMenuSidebarPc = () => {
     let menuSidebar = document.querySelector('#MenuSidebarWrapper');
     let body = document.querySelector('body');
 
-    botonSidebar.addEventListener('click', function() {
+    botonSidebar.addEventListener('pointerdown', function(e) {
         if(menuSidebar.classList.contains('menuSidebarClose')){
             menuSidebar.classList.remove('menuSidebarClose');
             menuSidebar.classList.add('menuSidebarAnimOpen');
