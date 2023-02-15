@@ -6,9 +6,12 @@ import {
     DescP,
     UlGridArmas,
     ImgSkinsDetalle,
-    PaginadoButton
+    PaginadoContainer,
+    PaginadoButton,
+    PaginadoP
 } from './Sections.elements';
 import Cargando from './Cargando';
+import {AiOutlineMinusCircle, AiOutlinePlusCircle} from 'react-icons/ai';
 
 function DetalleArma() {
 
@@ -41,7 +44,7 @@ function DetalleArma() {
                 setCollectionComplete(collectionsSkins);
 
                 let arrPaginado = [];
-                for(let i = paginaStart; i < pagina*30; i++){
+                for(let i = paginaStart; i < pagina*16; i++){
                     if(collectionsSkins[i] !== undefined){
                         arrPaginado.push(collectionsSkins[i]);
                     }
@@ -59,8 +62,6 @@ function DetalleArma() {
                 });
                 setlista(listaSkin);
                 setCargando(false);
-                console.log(pagina);
-                console.log(paginaStart);
             })
             .catch((err) => {
                 console.log(err);
@@ -70,15 +71,15 @@ function DetalleArma() {
 
 //BOTONES PAGINADOR
     function handlePageUp() {
-        if(pagina >= 1 && paginaStart+30 < collectionComplete.length){
+        if(pagina >= 1 && paginaStart+16 < collectionComplete.length){
             setPagina(pagina+1);
-            setPaginaStart(paginaStart+30);
+            setPaginaStart(paginaStart+16);
         }
     }    
     function handlePageDown() {
         if(pagina > 1){
             setPagina(pagina-1);
-            setPaginaStart(paginaStart-30);
+            setPaginaStart(paginaStart-16);
         }
     }
 //
@@ -95,11 +96,11 @@ function DetalleArma() {
                 <TituloH2>Skins de VALORANT</TituloH2>
                 <DescP>Explora la colección completa de skins para {nombreArma} en VALORANT. Cada skin es única y te ofrece un estilo distinto en el campo de batalla. ¡Descubre todas las opciones disponibles aquí!</DescP>
                 <DescP>Hay {collectionComplete.length} skins de {nombreArma} en el juego</DescP>
-                <div>
-                    <DescP>Pagina {pagina}</DescP>
-                    <PaginadoButton onPointerDown={handlePageDown}>-30</PaginadoButton>
-                    <PaginadoButton onPointerDown={handlePageUp}>+30</PaginadoButton>
-                </div>
+                <PaginadoContainer>
+                    <PaginadoButton onPointerDown={handlePageDown}><AiOutlineMinusCircle/></PaginadoButton>
+                    <PaginadoP>Pagina {pagina}</PaginadoP>
+                    <PaginadoButton onPointerDown={handlePageUp}><AiOutlinePlusCircle/></PaginadoButton>
+                </PaginadoContainer>
                 <UlGridArmas>
                     {lista}
                 </UlGridArmas>

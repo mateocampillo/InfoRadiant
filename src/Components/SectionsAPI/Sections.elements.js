@@ -45,6 +45,7 @@ export const ErrContainer = styled.div`
 
 export const MainWrapper = styled.div`
     width: 100vw;
+    min-height: 94vh;
     background-color: ${colors.navy};
 `;
 
@@ -85,8 +86,36 @@ export const HrCustom = styled.hr`
     margin: 10px auto;
 `;
 
-export const PaginadoButton = styled.button`
+export const PaginadoContainer = styled.div`
+    width: 60%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 20% 60% 20%;
+    text-align: center;
+    @media (min-width: 768px){
+        width: 45%;
+    }
+    @media (min-width: 992px){
+        width: 30%;
+    }
+    @media (min-width: 1200px){
+        width: 20%;
+    }
+`;
 
+export const PaginadoButton = styled.button`
+    background: none;
+    border: none;
+    color: ${colors.white};
+    cursor: pointer;
+    svg{
+        font-size: 2rem;
+    }
+`;
+export const PaginadoP = styled.p`
+    color: ${colors.white};
+    font-size: 1.3rem;
 `;
 
 export const UlGridSingle = styled.ul`
@@ -209,6 +238,7 @@ export const UlGridArmas = styled.ul`
     }
     @media (min-width: 1200px){
         font-size: 1.1rem;
+        grid-template-columns: 25% 25% 25% 25%;
     }
 `;
 
