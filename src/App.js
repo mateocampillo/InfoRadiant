@@ -22,9 +22,12 @@ import {
   About,
   Agentes
 } from './Components';
+
 import {
   AppWrapper
 } from './Components/Elements/Elements';
+
+import { ProSidebarProvider } from 'react-pro-sidebar';
 
 const router = createBrowserRouter([
   {
@@ -80,11 +83,13 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div className="App">
-      <AppWrapper>
-        <Sidebar />
-        <MenuSidebar />
-        <RouterProvider router={router} />
-      </AppWrapper>
+      <ProSidebarProvider>
+        <AppWrapper>
+          <Sidebar />
+          <MenuSidebar />
+          <RouterProvider router={router} />
+        </AppWrapper>
+      </ProSidebarProvider>
     </div>
   );
 }

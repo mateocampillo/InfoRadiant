@@ -28,6 +28,9 @@ scrollbar-width: none !important; /* For Firefox */
     height: 100%;
     overflow: hidden;
 }
+#proSidebar{
+    position: absolute;
+}
 .menuSidebarClose{
     left: -100%;
 }
