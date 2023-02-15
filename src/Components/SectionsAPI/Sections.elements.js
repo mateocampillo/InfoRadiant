@@ -85,6 +85,10 @@ export const HrCustom = styled.hr`
     margin: 10px auto;
 `;
 
+export const PaginadoButton = styled.button`
+
+`;
+
 export const UlGridSingle = styled.ul`
     display: grid;
     grid-template-columns: 100%;

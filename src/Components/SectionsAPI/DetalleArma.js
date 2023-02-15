@@ -5,7 +5,8 @@ import {
     TituloH2,
     DescP,
     UlGridArmas,
-    ImgSkinsDetalle
+    ImgSkinsDetalle,
+    PaginadoButton
 } from './Sections.elements';
 import Cargando from './Cargando';
 
@@ -16,6 +17,9 @@ function DetalleArma() {
     const [cargando, setCargando] = useState(true);
     const [lista, setlista] = useState([]);
     const [nombreArma, setNombreArma] = useState('');
+    const [collectionComplete, setCollectionComplete] = useState([]);
+    const [pagina, setPagina] = useState(1);
+    const [paginaStart, setPaginaStart] = useState(0);
     const apiCall = 'https://valorant-api.com/v1/weapons/';
     const languageApi = '?language=es-MX'
 
@@ -34,7 +38,17 @@ function DetalleArma() {
                         })
                     }
                 });
-                let listaSkin = collectionsSkins.map((objeto) => {
+                setCollectionComplete(collectionsSkins);
+
+                let arrPaginado = [];
+                for(let i = paginaStart; i < pagina*30; i++){
+                    if(collectionsSkins[i] !== undefined){
+                        arrPaginado.push(collectionsSkins[i]);
+                    }
+                }
+
+
+                let listaSkin = arrPaginado.map((objeto) => {
                     objeto.titulo = objeto.titulo.replace(nombreArma, '');
                     return (
                         <li key={objeto.uuid}>
@@ -45,11 +59,29 @@ function DetalleArma() {
                 });
                 setlista(listaSkin);
                 setCargando(false);
+                console.log(pagina);
+                console.log(paginaStart);
             })
             .catch((err) => {
                 console.log(err);
             });
-    }, [query, nombreArma]);
+    }, [pagina, paginaStart, query, nombreArma]);
+
+
+//BOTONES PAGINADOR
+    function handlePageUp() {
+        if(pagina >= 1 && paginaStart+30 < collectionComplete.length){
+            setPagina(pagina+1);
+            setPaginaStart(paginaStart+30);
+        }
+    }    
+    function handlePageDown() {
+        if(pagina > 1){
+            setPagina(pagina-1);
+            setPaginaStart(paginaStart-30);
+        }
+    }
+//
 
     if(cargando) {
         return (
@@ -62,7 +94,12 @@ function DetalleArma() {
             <MainContainer>
                 <TituloH2>Skins de VALORANT</TituloH2>
                 <DescP>Explora la colección completa de skins para {nombreArma} en VALORANT. Cada skin es única y te ofrece un estilo distinto en el campo de batalla. ¡Descubre todas las opciones disponibles aquí!</DescP>
-                <DescP>Hay {lista.length} skins de {nombreArma} en el juego</DescP>
+                <DescP>Hay {collectionComplete.length} skins de {nombreArma} en el juego</DescP>
+                <div>
+                    <DescP>Pagina {pagina}</DescP>
+                    <PaginadoButton onPointerDown={handlePageDown}>-30</PaginadoButton>
+                    <PaginadoButton onPointerDown={handlePageUp}>+30</PaginadoButton>
+                </div>
                 <UlGridArmas>
                     {lista}
                 </UlGridArmas>
