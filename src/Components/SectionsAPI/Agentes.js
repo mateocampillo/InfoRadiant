@@ -82,6 +82,7 @@ function Agentes() {
                                 if(ability.slot === 'Passive'){
                                     return (
                                         <li>
+                                            <h3>Pasiva:</h3>
                                             <h4>Nombre:</h4><p> {ability.displayName}</p><br/>
                                             <h4>Descripcion:</h4><p> {ability.description}</p><br/>
                                         </li>
