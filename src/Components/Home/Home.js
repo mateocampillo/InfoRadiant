@@ -33,7 +33,7 @@ function Sidebar(){
                 let fecha = new Date();
                 let day = moment(fecha).format('DD-MM-YYYY'); 
                 setFecha(day);
-                setAgenteDelDia(arrAgentes[randInt(0, arrAgentes.length)]);
+                setAgenteDelDia(arrAgentes[randInt(0, arrAgentes.length-1)]);
                 setCargando(false);
             })
             .catch((err) => {console.log(err);})
