@@ -20,6 +20,29 @@ export const CargandoContainer = styled.div`
 
 `;
 
+export const ErrWrapper = styled.div`
+    width: 100vw;
+    height: 94vh;
+    background-color: ${colors.navy};
+    position: relative;
+`;
+
+export const ErrContainer = styled.div`
+    position: absolute;
+    transform: translateY(30%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    h2{
+        font-size: 2rem;
+    }
+    p{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+`;
+
 export const MainWrapper = styled.div`
     width: 100vw;
     background-color: ${colors.navy};
@@ -49,7 +72,7 @@ export const DescP = styled.p`
         color: ${colors.white};
     }
     @media (min-width: 1200px){
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         text-align: center;
     }
 `;
@@ -94,7 +117,7 @@ export const UlGridRangos = styled.ul`
         grid-template-columns: 33% 33% 33%;
     }
     @media (min-width: 1200px){
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 `;
 
@@ -119,7 +142,7 @@ export const UlGridSprays = styled.ul`
         grid-template-columns: 25% 25% 25% 25%;
     }
     @media (min-width: 1200px){
-        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
         font-size: 1.3rem;
     }
 `;
@@ -146,8 +169,8 @@ export const UlGridTitulos = styled.ul`
         grid-template-columns: 33% 33% 33%;
     }
     @media (min-width: 1200px){
-        grid-template-columns: 20% 20% 20% 20% 20%;
-        font-size: 1.3rem;
+        grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+        font-size: 1rem;
     }
 `;
 
@@ -181,7 +204,7 @@ export const UlGridArmas = styled.ul`
         grid-template-columns: 33% 33% 33%;
     }
     @media (min-width: 1200px){
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 `;
 
@@ -316,7 +339,7 @@ export const UlGridCartas = styled.ul`
     }
     @media (min-width: 1200px){
         grid-template-columns: 25% 25% 25% 25%;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 `;
 
@@ -429,6 +452,9 @@ export const SelectAgentes = styled.select`
 `;
 
 export const ImgHabilidad = styled.img`
+    :hover{
+        filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+    }
     width: 20%;
     @media (min-width: 768px){
         width: 15%;
@@ -506,14 +532,14 @@ export const UlAgentes = styled.ul`
             font-size: 1.2rem;
         }
         @media (min-width: 1200px){
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
     }
     p{
         display: inline;
         color: ${colors.white};
         @media (min-width: 1200px){
-            font-size: 1.3rem;
+            font-size: 1.1rem;
         }
     }
 `;

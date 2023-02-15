@@ -20,7 +20,8 @@ import {
   Mapas,
   CartasDeJugador,
   About,
-  Agentes
+  Agentes,
+  ErrElement
 } from './Components';
 
 import {
@@ -33,6 +34,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+    errorElement: <ErrElement />
   },
   {
     path: "/player-titles",

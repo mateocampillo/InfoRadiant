@@ -45,7 +45,7 @@ function Sidebar(){
                 <HomeContainer>
                     <HomeInfo>
                         <h1>Info Radiant</h1>
-                        <p>Toda la data viene directo de <a href='https://dash.valorant-api.com/' target={'_blank'} rel={'noreferrer'}>Valorant-API</a> y se actualiza de forma automatica con cada nuevo parche.</p>
+                        <p>Toda la data viene directo de <a href='https://dash.valorant-api.com/' target={'_blank'} rel={'noreferrer'}>Valorant-API</a> y se actualiza de forma automática con cada nuevo parche.</p>
                         <p>La idea de Info Radiant es presentar la información actual del juego en un formato visual articulado y fácil de absorber.<br/><br/>Por ahora solo se encuentra disponible en formato español de latinoamerica.</p>
                         <p>Creado por: <Link to={'https://www.linkedin.com/in/mateocampillo/'} target={'_blank'} rel={'noreferrer'}><u>Mateo Campillo</u></Link></p>
                     </HomeInfo>
@@ -64,7 +64,7 @@ function Sidebar(){
             <HomeContainer>
                 <HomeInfo>
                     <h1>Info Radiant</h1>
-                    <p>Toda la data viene directo de <a href='https://dash.valorant-api.com/' target={'_blank'} rel={'noreferrer'}>Valorant-API</a> y se actualiza de forma automatica con cada nuevo parche.</p>
+                    <p>Toda la data viene directo de <a href='https://dash.valorant-api.com/' target={'_blank'} rel={'noreferrer'}>Valorant-API</a> y se actualiza de forma automática con cada nuevo parche.</p>
                     <p>La idea de Info Radiant es presentar la información actual del juego en un formato visual articulado y fácil de absorber.<br/><br/>Por ahora solo se encuentra disponible en formato español de latinoamerica.</p>
                     <p>Creado por: <Link to={'https://www.linkedin.com/in/mateocampillo/'} target={'_blank'} rel={'noreferrer'}><u>Mateo Campillo</u></Link></p>
                 </HomeInfo>

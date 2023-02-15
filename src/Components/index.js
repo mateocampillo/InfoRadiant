@@ -12,3 +12,4 @@ export {default as Mapas} from './SectionsAPI/Mapas';
 export {default as CartasDeJugador} from './SectionsAPI/CartasDeJugador';
 export {default as About} from './SectionsAPI/About';
 export {default as Agentes} from './SectionsAPI/Agentes';
+export {default as ErrElement} from './Elements/ErrElement';
