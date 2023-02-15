@@ -34,7 +34,7 @@ scrollbar-width: none !important; /* For Firefox */
 
 /* Sidebar */
 #proSidebar{
-    position: absolute;
+    position: fixed;
     z-index: 2000;
     height: 70vh;
     border: none;
