@@ -79,6 +79,14 @@ function Agentes() {
                         <h3>Habilidades:</h3>
                         <UlAgentes>
                             {agentSelected.abilities.map((ability) => {
+                                if(ability.slot === 'Passive'){
+                                    return (
+                                        <li>
+                                            <h4>Nombre:</h4><p> {ability.displayName}</p><br/>
+                                            <h4>Descripcion:</h4><p> {ability.description}</p><br/>
+                                        </li>
+                                    )
+                                }
                                 return (
                                     <li>
                                         <h4>Nombre:</h4><p> {ability.displayName}</p><br/>
